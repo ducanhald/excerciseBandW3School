@@ -6,9 +6,60 @@
     box-sizing: border-box;
 }
 
+
+/* common */
+
 html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+
+/*  */
 
 #app {}
 
@@ -126,9 +177,7 @@ html {
 
 #slider #text-content {}
 
-#content {
-    height: 10000px;
-}
+#content {}
 
 #content .content-section {
     width: 800px;
@@ -144,6 +193,120 @@ html {
     text-align: center;
 }
 
+#content .team {
+    margin-top: 47px;
+    /* các lớp con có float khiến class lớn hơn đẩy ra, kahcs phục bằng */
+    overflow: hidden;
+}
+
+.team .namemember {
+    font-size: 15px;
+}
+
+.team .imgmember {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .book-ticker {
+    background-color: #fff;
+    margin-top: 25px;
+}
+
+.tour-section .item {
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tour-section .sold-out {
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+}
+
+.tour-section .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+#buyticker {
+    overflow: hidden;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+#buyticker .contentticker {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+#buyticker .img-ticker {
+    width: 100%;
+    display: block;
+}
+
+.img-ticker:hover {
+    opacity: 0.5;
+}
+
+.place-tiker {
+    margin-top: 15px;
+}
+
+.date-ticker {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.ticker-desc {
+    margin-top: 15px;
+}
+
+.btn-buy {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none
+}
+
+.btn-buy:hover {
+    background-color: #757575;
+}
+
+.contact-content {
+    margin-top: 48px;
+    overflow: hidden;
+    ;
+}
+
+.form-submit-btn {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    float: right;
+}
+
+.form-submit-btn:hover {
+    background-color: #757575;
+}
+
 .subheading {
     font-size: 15px;
     font-weight: 300;
@@ -153,6 +316,22 @@ html {
     opacity: 0.6;
 }
 
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
 .about {
     font-size: 15px;
     margin-top: 25px;
@@ -160,4 +339,22 @@ html {
     line-height: 1.4;
 }
 
-#footer {}
+.map {}
+
+.imgmap {
+    width: 100%;
+}
+
+.social {}
+
+#footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#footer a {
+    color: #757575;
+    text-decoration: none;
+}
